@@ -214,6 +214,8 @@ body {
   transition: 1s;
 }
 .about__img:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -237,10 +239,12 @@ body {
 }
 .gallery__content img {
   border-radius: 15px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .gallery__content img:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }

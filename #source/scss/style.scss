@@ -128,9 +128,13 @@ body{
     }
     &__img {
         max-width: 510px;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
     }
     &__img:hover {
+        transition: 1s;
         transform: scale(1.1);
     }
     &__text {
@@ -150,9 +154,13 @@ body{
         justify-content: space-between;
         img{
             border-radius: 15px;
-            transition: 1s;
+            -webkit-transition: 0.4s;
+            -moz-transition: 0.4s;
+            -o-transition: 0.4s;
+            transition: 0.4s;
         }
         img:hover{
+            transition: 1s;
             transform: scale(1.1);
         }
     }
