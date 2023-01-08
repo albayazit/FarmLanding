@@ -26,6 +26,12 @@ body{
     margin: 0 auto;
     padding: 22px 0;
 }
+.title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+}
 
 .top {
 		&__header {
@@ -90,6 +96,8 @@ body{
             flex-wrap: wrap;
             img{
                 display: inline-block;
+                box-shadow: 4px 6px 25px 0px #0000002B;
+                border-radius: 30px;
             }
             img:nth-child(1){
                 width: 200px;
@@ -108,4 +116,24 @@ body{
             }
         }
         margin: 0 0 150px 0;
+}
+
+.about {
+    &__title {
+        margin: 0 0 100px 0;
     }
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        max-width: 510px;
+    }
+    &__text {
+        width: 540px;
+        margin: 0 0 0 102px;
+        font-size: 16px;
+        line-height: 28.8px;
+    }
+    margin: 0 0 150px 0;
+}
