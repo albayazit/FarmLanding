@@ -71,6 +71,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Dela Gothic One";
+  src: url("../fonts/DelaGothicOne-Regular.eot");
+  src: local("../fonts/Dela Gothic One Regular"), local("../fonts/DelaGothicOne-Regular"), url("../fonts/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DelaGothicOne-Regular.woff2") format("woff2"), url("../fonts/DelaGothicOne-Regular.woff") format("woff"), url("../fonts/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -85,6 +93,9 @@ body {
   padding: 22px 0;
 }
 
+.top {
+  margin: 0 0 150px 0;
+}
 .top__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +106,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 0 130px 0;
 }
 .top__menu a {
   margin: 0 24px 0 0;
@@ -112,4 +124,64 @@ body {
   border-radius: 100px;
   height: 100%;
   display: inline-block;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2%;
+  font-weight: 500;
+}
+.top__menu a:last-child:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.top__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top__title {
+  font-family: "Dela Gothic One";
+  font-size: 64px;
+  line-height: 95px;
+  max-width: 600px;
+  margin: 0 0 22px 0;
+}
+.top__subtitle {
+  color: #676767;
+  font-size: 20px;
+  line-height: 36px;
+  max-width: 486px;
+}
+.top__subtitle span {
+  font-weight: 700;
+}
+.top__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 520px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.top__image img {
+  display: inline-block;
+}
+.top__image img:nth-child(1) {
+  width: 200px;
+}
+.top__image img:nth-child(2) {
+  margin: 0 0 0 20px;
+  width: 300px;
+}
+.top__image img:nth-child(3) {
+  width: 300px;
+  margin: 20px 0 0 0;
+}
+.top__image img:nth-child(4) {
+  width: 200px;
+  margin: 20px 0 0 20px;
 }
