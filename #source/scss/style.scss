@@ -1,3 +1,56 @@
 @import "nullstyle.scss";
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@400;500;700&display=swap");
 
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #181A1D;
+}
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px 0;
+}
+
+.top {
+		&__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+		}
+		&__logo {
+		}
+		&__menu {
+            a{
+                margin: 0 24px 0 0;
+                color: #181A1D;
+                line-height: 21px;
+            }
+            a:hover{
+                color: lightcoral;
+            }
+            a:last-child{
+                margin: 0;
+                padding: 10px 24px;
+                background-color: #000;
+                color: #fff;
+                border-radius: 100px;
+                height: 100%;
+                display: inline-block;
+            }
+		}
+		&__content {
+		}
+		&__row {
+		}
+		&__text {
+		}
+		&__title {
+		}
+		&__subtitle {
+		}
+		&__image {
+		}
+}
