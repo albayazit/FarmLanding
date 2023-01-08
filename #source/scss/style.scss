@@ -50,7 +50,7 @@ body{
                 line-height: 21px;
             }
             a:hover{
-                color: lightcoral;
+                color: rgba(0, 0, 0, 0.5);
             }
             a:last-child{
                 margin: 0;
@@ -186,6 +186,107 @@ body{
                 height: 600px;
             }
         }
+    }
+    margin: 0 0 150px 0;
+}
+
+.notice {
+    &__title {
+    }
+    &__block {
+        box-shadow: 4px 6px 25px 0px #0000002B;
+        border-radius: 30px;
+    }
+    .block {
+        &__content {
+            padding: 28px 30px 15px;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 24px 0;
+        }
+        &__text {
+            letter-spacing: 1%;
+            line-height: 21px;
+            p{
+                margin: 0 0 8px 0;
+            }
+            p:last-child{
+                margin: 0 0 28px 0;
+            }
+        }
+        &__signature {
+            display: flex;
+            justify-content: right;
+            color: #676767;
+        }
+        &__author {
+            margin: 0 40px 0 0;
+        }
+        &__date {
+        }
+    }
+    margin: 0 0 150px 0;
+}
+
+.documentation {
+    .documentation__block{
+        box-shadow: 4px 6px 25px 0px #0000002B;
+        display: inline-block;
+        width: 384px;
+        border-radius: 30px;
+    }
+    .block__content{
+        padding: 25px 20px 20px 25px;
+    }
+    .block__links{
+        display: flex;
+        justify-content: center;
+        a{
+            display: inline-block;
+            border: 1px solid #181A1D;
+            padding: 6px 25px;
+            border-radius: 100px;
+            color: #181A1D;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        a:first-child{
+            margin: 0 20px 0 0;
+        }
+        a:hover{
+            transition: 0.2s;
+            background-color: #181A1D;
+            color: #fff;
+        }
+    }
+    .block__title{
+        margin: 0 0 40px 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }    
+    .treaty__row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 50px 0;
+    }
+    .protocol__row {
+        text-align: center;
+    }
+    .treaty {
+        &__title {
+        }
+    }
+    .documentation-title {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 30px;
+        margin: 0 0 30px 0;
     }
     margin: 0 0 150px 0;
 }
