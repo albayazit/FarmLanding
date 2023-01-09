@@ -290,3 +290,45 @@ body{
     }
     margin: 0 0 150px 0;
 }
+
+.footer {
+    background-color: #181A1D;
+    color: #fff;
+    &__content{
+        padding: 50px 0 22px;
+    }
+    &__title{
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin: 0 auto 50px;
+        .links__content{
+            text-align: center;
+            width: 73px;
+            img{
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+    &__info {
+        p{
+            text-align: center;
+            font-size: 16px;
+        }
+        p:nth-child(1){
+            margin: 0 0 20px 0;
+        }
+        p:nth-child(2){
+            margin: 0 0 150px 0;
+        }
+        p:nth-child(3){
+            font-size: 14px;
+        }
+        a{
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
