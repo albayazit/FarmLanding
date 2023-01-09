@@ -165,13 +165,16 @@ body{
             img:nth-child(1){
                 margin: 0 20px 20px 0;
                 width: 280px;
+                height: 280px;
             }
             img:nth-child(2){
-                max-width: 280px;
+                width: 280px;
+                height: 280px;
                 margin: 0 0 20px 0;
             }
             img:nth-child(3){
                 width: 580px;
+                height: 300px;
             }
         }
         &__right {
