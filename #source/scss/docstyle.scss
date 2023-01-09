@@ -46,6 +46,9 @@ body{
     &__content {
         img{
             width: 550px;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -o-transition: 1s;
             transition: 1s;
         }
         img:hover{

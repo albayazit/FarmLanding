@@ -79,6 +79,10 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-display: swap;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -310,6 +314,7 @@ body {
 .notice .block__author {
   margin: 0 40px 0 0;
 }
+
 .documentation {
   margin: 0 0 150px 0;
 }
@@ -386,7 +391,7 @@ body {
 .footer a {
   color: #fff;
 }
-.footer a:hover {
+.footer__links a:hover {
   color: greenyellow;
 }
 .footer__links {

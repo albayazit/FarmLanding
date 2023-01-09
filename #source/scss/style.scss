@@ -13,7 +13,9 @@
     font-display: swap;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -40,8 +42,6 @@ body{
             align-items: center;
             justify-content: space-between;
             margin: 0 0 130px 0;
-		}
-		&__logo {
 		}
 		&__menu {
             a{
@@ -72,8 +72,6 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
-		}
-		&__text {
 		}
 		&__title {
             font-family: 'Dela Gothic One';
@@ -120,8 +118,6 @@ body{
 }
 
 .about {
-    &__title {
-    }
     &__content {
         display: flex;
         align-items: center;
@@ -147,8 +143,6 @@ body{
 }
 
 .gallery {
-    &__title {
-    }
     &__content {
         display: flex;
         justify-content: space-between;
@@ -191,8 +185,6 @@ body{
 }
 
 .notice {
-    &__title {
-    }
     &__block {
         box-shadow: 4px 6px 25px 0px #0000002B;
         border-radius: 30px;
@@ -224,8 +216,6 @@ body{
         }
         &__author {
             margin: 0 40px 0 0;
-        }
-        &__date {
         }
     }
     margin: 0 0 150px 0;
@@ -277,10 +267,6 @@ body{
     .protocol__row {
         text-align: center;
     }
-    .treaty {
-        &__title {
-        }
-    }
     .documentation-title {
         font-size: 20px;
         text-align: center;
@@ -297,13 +283,13 @@ body{
     &__content{
         padding: 50px 0 22px;
     }
-    &__title{
-    }
     a{
         color: #fff;
     }
-    a:hover{
-        color: greenyellow;
+    &__links{
+        a:hover{
+            color: greenyellow;
+        }
     }
     &__links {
         display: flex;
