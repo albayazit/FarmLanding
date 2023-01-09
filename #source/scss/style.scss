@@ -1,23 +1,10 @@
 @import "nullstyle.scss";
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@400;500;700&display=swap");
-@font-face {
-    font-family: 'Dela Gothic One';
-    src: url('../fonts/DelaGothicOne-Regular.eot');
-    src: local('../fonts/Dela Gothic One Regular'), local('../fonts/DelaGothicOne-Regular'),
-        url('../fonts/DelaGothicOne-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/DelaGothicOne-Regular.woff2') format('woff2'),
-        url('../fonts/DelaGothicOne-Regular.woff') format('woff'),
-        url('../fonts/DelaGothicOne-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
 html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat';
     font-weight: 400;
     font-size: 14px;
     line-height: 180%;
@@ -42,6 +29,10 @@ body{
             align-items: center;
             justify-content: space-between;
             margin: 0 0 130px 0;
+            img{
+                width: 177px;
+                height: 36px;
+            }
 		}
 		&__menu {
             a{
@@ -74,20 +65,21 @@ body{
             align-items: center;
 		}
 		&__title {
-            font-family: 'Dela Gothic One';
-            font-size: 64px;
-            line-height: 95px;
-            max-width: 600px;
+            font-size: 70px;
+            line-height: 90px;
+            max-width: 620px;
             margin: 0 0 22px 0;
+            font-weight: 800;
+            letter-spacing: 1;
 		}
 		&__subtitle {
             color: #676767;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 36px;
             span{
                 font-weight: 700;
             }
-            max-width: 486px;
+            max-width: 480px;
 		}
 		&__image {
             display: flex;
@@ -100,18 +92,22 @@ body{
             }
             img:nth-child(1){
                 width: 200px;
+                height: 250px;
             }
             img:nth-child(2){
                 margin: 0 0 0 20px;
                 width: 300px;
+                height: 220px;
             }
             img:nth-child(3){
                 width: 300px;
+                height: 220px;
                 margin: 20px 0 0 0;
             }
             img:nth-child(4){
                 width: 200px;
-                margin: 20px 0 0 20px;
+                height: 250px;
+                margin: -10px 0 0 20px;
             }
         }
         margin: 0 0 150px 0;
@@ -124,6 +120,7 @@ body{
     }
     &__img {
         max-width: 510px;
+        height: 321px;
         -webkit-transition: 1s;
         -moz-transition: 1s;
         -o-transition: 1s;
@@ -304,6 +301,8 @@ body{
             width: 73px;
             img{
                 margin: 0 0 10px 0;
+                width: 48px;
+                height: 48px;
             }
         }
     }
