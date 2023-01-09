@@ -90,7 +90,7 @@ body {
 .content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 22px 0;
+  padding: 22px 0 0 0;
 }
 
 .title {
@@ -383,6 +383,12 @@ body {
 .footer__content {
   padding: 50px 0 22px;
 }
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: greenyellow;
+}
 .footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,4 +422,7 @@ body {
 .footer__info a {
   color: #fff;
   font-weight: 700;
+}
+.footer__info a:hover {
+  color: greenyellow;
 }

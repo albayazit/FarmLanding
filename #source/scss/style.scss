@@ -24,7 +24,7 @@ body{
 .content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 22px 0;
+    padding: 22px 0 0 0;
 }
 .title{
     font-size: 36px;
@@ -299,6 +299,12 @@ body{
     }
     &__title{
     }
+    a{
+        color: #fff;
+    }
+    a:hover{
+        color: greenyellow;
+    }
     &__links {
         display: flex;
         justify-content: space-between;
@@ -329,6 +335,9 @@ body{
         a{
             color: #fff;
             font-weight: 700;
+        }
+        a:hover{
+            color: greenyellow;
         }
     }
 }
