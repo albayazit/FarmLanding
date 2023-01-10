@@ -110,6 +110,12 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 50px 0;
+}
+
 .block {
   display: -webkit-box;
   display: -ms-flexbox;
