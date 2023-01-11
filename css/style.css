@@ -84,9 +84,9 @@ body {
 }
 
 .content {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
-  padding: 22px 0 0 0;
+  padding: 22px 15px 0 15px;
 }
 
 .title {
@@ -140,6 +140,11 @@ body {
 .top__menu a:last-child:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+@media screen and (max-width: 840px) {
+  .top__menu {
+    display: none;
+  }
+}
 .top__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,6 +163,11 @@ body {
   margin: 0 0 22px 0;
   font-weight: 800;
   letter-spacing: 1;
+}
+@media screen and (max-width: 1170px) {
+  .top__title {
+    max-width: 400px;
+  }
 }
 .top__subtitle {
   color: #676767;
@@ -202,6 +212,72 @@ body {
   margin: -10px 0 0 20px;
 }
 
+.hamburger-menu {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 840px) {
+  .hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.hamburger-menu__toggle {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 24px;
+  background-size: cover;
+  margin: 0 -30px 0 0;
+  z-index: 3;
+  opacity: 0;
+}
+.hamburger-menu__links {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.hamburger-menu .links__content {
+  text-align: center;
+}
+.hamburger-menu .links__content a {
+  display: block;
+}
+.hamburger-menu .links__content a:active .hamburger-menu__links {
+  display: none;
+}
+.hamburger-menu .links__content img {
+  display: none;
+}
+.hamburger-menu__toggle:checked {
+  position: fixed;
+}
+.hamburger-menu__toggle:checked ~ .hamburger-menu__links {
+  display: inline-block;
+}
+.hamburger-menu__btn {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 24px;
+  background: url("../img/icons/icon_burger.svg") no-repeat;
+  background-size: cover;
+}
+
 .about {
   margin: 0 0 150px 0;
 }
@@ -215,7 +291,7 @@ body {
 }
 .about__img {
   max-width: 510px;
-  height: 321px;
+  height: 326px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -370,6 +446,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

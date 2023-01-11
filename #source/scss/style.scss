@@ -11,9 +11,9 @@ body{
     color: #181A1D;
 }
 .content {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
-    padding: 22px 0 0 0;
+    padding: 22px 15px 0 15px;
 }
 .title{
     font-size: 36px;
@@ -58,6 +58,9 @@ body{
             a:last-child:hover{
                 background-color:rgba(0, 0, 0, 0.8);
             }
+            @media screen and (max-width: 840px) {
+                display: none;
+            }
 		}
 		&__content {
             display: flex;
@@ -71,6 +74,9 @@ body{
             margin: 0 0 22px 0;
             font-weight: 800;
             letter-spacing: 1;
+            @media screen and (max-width: 1170px) {
+                max-width: 400px;
+            }
 		}
 		&__subtitle {
             color: #676767;
@@ -112,6 +118,63 @@ body{
         }
         margin: 0 0 150px 0;
 }
+.hamburger-menu {
+    display: none;
+    justify-content: center;
+    @media screen and (max-width: 840px) {
+        display: flex;
+        justify-content: center;
+    }
+    &__toggle {
+        display: inline-block;
+        align-items: center;
+        width: 30px;
+        height: 24px;
+        background-size: cover;
+        margin: 0 -30px 0 0;
+        z-index: 3;
+        opacity: 0;
+    }
+    &__links {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+    }
+    .links__content{
+        text-align: center;
+        a{
+            display: block;
+        }
+        a:active{
+           .hamburger-menu__links{
+            display: none;
+           } 
+        }
+        img{
+            display: none;
+        }
+    }
+    &__toggle:checked{
+        position: fixed;
+    }
+    &__toggle:checked ~ .hamburger-menu__links{
+        display: inline-block;
+    }
+    &__btn {
+        display: inline-block;
+        align-items: center;
+        width: 30px;
+        height: 24px;
+        background: url("../img/icons/icon_burger.svg") no-repeat;
+        background-size: cover;
+    }
+
+}
+
 
 .about {
     &__content {
@@ -261,6 +324,7 @@ body{
     }    
     .treaty__row {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 0 50px 0;
     }
