@@ -255,8 +255,8 @@ body {
 .hamburger-menu .links__content a {
   display: block;
 }
-.hamburger-menu .links__content a:active .hamburger-menu__links {
-  display: none;
+.hamburger-menu .links__content a:active {
+  color: green;
 }
 .hamburger-menu .links__content img {
   display: none;
