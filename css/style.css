@@ -248,6 +248,9 @@ body {
 .gallery {
   margin: 0 0 150px 0;
 }
+.gallery .gallery-mobile__container {
+  display: none;
+}
 .gallery__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,7 +457,7 @@ body {
   color: greenyellow;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
   .top__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -514,7 +517,8 @@ body {
   }
   .gallery__content .content__left {
     display: inline-block;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
   .gallery__content .content__right {
     -webkit-box-ordinal-group: 0;
@@ -555,9 +559,12 @@ body {
   }
 }
 @media screen and (max-width: 650px) {
+  .top__header {
+    margin-bottom: 100px;
+  }
   .top__image {
     width: 100%;
-    margin: 0 0 50px 0;
+    margin: 0 0 60px 0;
   }
   .top__image img {
     display: inline-block;
@@ -606,15 +613,78 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .gallery__content .content__left .gallery-mobile {
-    display: block;
-    width: 100%;
-  }
-  .gallery__content .content__left img:nth-child(1) {
-    margin: 0 0 20px 0;
+  .gallery__content .content__left {
+    display: none;
   }
   .gallery__content .content__right {
     display: none;
+  }
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    11.11% {
+      opacity: 1;
+    }
+    33.33% {
+      opacity: 1;
+    }
+    44.44% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    11.11% {
+      opacity: 1;
+    }
+    33.33% {
+      opacity: 1;
+    }
+    44.44% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .gallery__content .gallery-mobile {
+    position: relative;
+    width: 100%;
+  }
+  .gallery__content .gallery-mobile img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 9s;
+            animation-duration: 9s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .gallery__content .gallery-mobile img:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .gallery__content .gallery-mobile img:nth-child(2) {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  .gallery__content .gallery-mobile img:nth-child(3) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+  }
+  .gallery__content .gallery-mobile__container {
+    display: block;
+    margin-bottom: 100%;
   }
   .notice__block {
     border-radius: 20px;

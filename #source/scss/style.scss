@@ -156,6 +156,9 @@ body{
 }
 
 .gallery {
+    .gallery-mobile__container{
+        display: none;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
@@ -345,7 +348,11 @@ body{
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1220px){
+    
+}
+
+@media screen and (max-width: 1220px){
     .top__content{
         display: flex;
         flex-direction: column;
@@ -380,7 +387,8 @@ body{
         text-align: center;
         .content__left{
             display: inline-block;
-            width: 100%;
+            width: 95%;
+            margin: 0 auto;
         }
         .content__right{
             order: -1;
@@ -425,6 +433,9 @@ body{
 
 
 @media screen and (max-width: 650px) {
+    .top__header{
+        margin-bottom: 100px;
+    }
     .top__image{
         width: 100%;
         img{
@@ -448,7 +459,7 @@ body{
             margin: 0 0 0 4%;
             width: 38%;
         }
-        margin: 0 0 50px 0;
+        margin: 0 0 60px 0;
     }
     .top__title{
         font-size: 58px;
@@ -474,16 +485,27 @@ body{
             display: flex;
             flex-direction: column;
             .content__left{
-                .gallery-mobile{
-                    display: block;
-                    width: 100%;
-                }
-                img:nth-child(1){
-                    margin: 0 0 20px 0;
-                }
+                display: none;
             }
             .content__right{
                 display: none;
+            }
+            @keyframes fade { 
+                0% { opacity: 0; } 
+                11.11% { opacity: 1; } 
+                33.33% { opacity: 1; } 
+                44.44% { opacity: 0; } 
+                100% { opacity: 0; } 
+              } 
+              
+            .gallery-mobile { position:relative; width:100%;} 
+            .gallery-mobile img { position:absolute; width:100%; left:0; right:0; opacity:0; animation-name: fade; animation-duration: 9s; animation-iteration-count: infinite; } 
+            .gallery-mobile img:nth-child(1) { animation-delay: 0s; } 
+            .gallery-mobile img:nth-child(2) { animation-delay: 3s; } 
+            .gallery-mobile img:nth-child(3) { animation-delay: 6s; }
+            .gallery-mobile__container{
+                display: block;
+                margin-bottom: 100%;
             }
         }
     }
