@@ -8,9 +8,9 @@ body{
     color: #181A1D;
 }
 .content {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
-    padding: 150px 0 44px 0;
+    padding: 150px 15px 44px 15px;
 }
 
 .header{
@@ -24,9 +24,12 @@ body{
     &__content{
         display: flex;
         margin: 0 auto;
-        width: 1200px;
+        max-width: 1200px;
     }
     &__button{
+        display: flex;
+        position: absolute;
+        margin-top: 3px;
         a{
             padding: 0 10px;
         }
@@ -49,16 +52,31 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     &__content {
+        display: flex;
+        width: 48%;
         img{
-            width: 550px;
+            width: 100%;
             -webkit-transition: 1s;
             -moz-transition: 1s;
             -o-transition: 1s;
             transition: 1s;
         }
         img:hover{
-            transform: scale(1.1);
+            transform: scale(1.04);
         }
         margin: 0 0 50px 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .block{
+        display: flex;
+        flex-direction: column;
+        &__content{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
     }
 }
