@@ -348,10 +348,7 @@ body{
     }
 }
 
-@media screen and (max-width: 1220px){
-    
-}
-
+//------- Adapt for tablets ------- 
 @media screen and (max-width: 1220px){
     .top__content{
         display: flex;
@@ -431,7 +428,7 @@ body{
     }
 }
 
-
+//------- Adapt for mobile ------- 
 @media screen and (max-width: 650px) {
     .top__header{
         margin-bottom: 100px;
