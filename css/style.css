@@ -665,8 +665,8 @@ body {
     opacity: 0;
     -webkit-animation-name: fade;
             animation-name: fade;
-    -webkit-animation-duration: 9s;
-            animation-duration: 9s;
+    -webkit-animation-duration: 12s;
+            animation-duration: 12s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
@@ -681,6 +681,10 @@ body {
   .gallery__content .gallery-mobile img:nth-child(3) {
     -webkit-animation-delay: 6s;
             animation-delay: 6s;
+  }
+  .gallery__content .gallery-mobile img:nth-child(4) {
+    -webkit-animation-delay: 9s;
+            animation-delay: 9s;
   }
   .gallery__content .gallery-mobile__container {
     display: block;
