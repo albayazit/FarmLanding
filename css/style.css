@@ -613,6 +613,16 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .gallery__content img {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .gallery__content img:hover {
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: none;
+            transform: none;
+  }
   .gallery__content .content__left {
     display: none;
   }

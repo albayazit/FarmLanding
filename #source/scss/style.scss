@@ -479,6 +479,16 @@ body{
     }
     .gallery{
         &__content{
+            img{
+                -webkit-transition: none;
+                -moz-transition: none;
+                -o-transition: none;
+                transition: none;
+            }
+            img:hover{
+                transition: none;
+                transform: none;
+            }
             display: flex;
             flex-direction: column;
             .content__left{
