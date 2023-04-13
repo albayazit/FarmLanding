@@ -1,5 +1,11 @@
 # Landing page for farm
+A simple landing with own design and using SASS.
 
-## Link: https://kfhkhasanov.ru
+## Preview:
+![Preview](https://github.com/albayazit/kfhkhasanov/blob/main/data/preview.png)
 
-## Released: 12.01.2023
+## Link: 
+https://kfhkhasanov.ru
+
+## Released: 
+12.01.2023
